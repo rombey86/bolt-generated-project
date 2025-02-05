@@ -1,0 +1,34 @@
+{
+  "digital-services": [
+    { "url": "https://example.com/android-tools", "text": "Android Tools" },
+    { "url": "https://example.com/cloud-services", "text": "Cloud Services" },
+    { "url": "https://example.com/hosting", "text": "Hosting" }
+  ],
+  "entertainment": [
+    { "url": "https://example.com/movies", "text": "Movies" },
+    { "url": "https://example.com/games", "text": "Games" },
+    { "url": "https://example.com/anime", "text": "Anime" }
+  ],
+  "privacy-security": [
+    { "url": "https://example.com/vpn", "text": "VPN" },
+    { "url": "https://example.com/cryptography", "text": "Cryptography" },
+    { "url": "https://example.com/secure-os", "text": "Secure OS" }
+  ],
+  "financial": [
+    { "url": "https://example.com/crypto", "text": "Crypto" },
+    { "url": "https://example.com/e-wallets", "text": "E-wallets" },
+    { "url": "https://example.com/virtual-cards", "text": "Virtual Cards" }
+  ],
+  "adult-content": [
+    { "url": "https://example.com/xxx", "text": "XXX Categories" }
+  ],
+  "utilities": [
+    { "url": "https://example.com/online-tools", "text": "Online Tools" },
+    { "url": "https://example.com/resources", "text": "Resources" }
+  ],
+  "community": [
+    { "url": "https://example.com/forums", "text": "Forums" },
+    { "url": "https://example.com/news", "text": "News" },
+    { "url": "https://example.com/telegram", "text": "Telegram" }
+  ]
+}

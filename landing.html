@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Directory</title>
+    <style>/* Critical CSS - Inlined */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+
+nav button {
+    margin-left: 0.5em;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+main {
+    padding: 1em;
+}
+
+.hero {
+    background-color: #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.category {
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.category h2 {
+    background-color: #eee;
+    padding: 0.5em;
+    margin: 0;
+    cursor: pointer;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+}
+
+.category ul.show {
+    display: block;
+}
+
+.category li {
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.category li:last-child {
+    border-bottom: none;
+}
+
+.search-bar {
+    padding: 1em;
+    background-color: #fff;
+    margin-bottom: 1em;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Link Directory</h1>
+        <nav>
+            <button id="en">English</button>
+            <button id="de">German</button>
+            <button id="fr">French</button>
+            <button id="es">Spanish</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Trending Highlights</h2>
+            <div id="trending">
+                <!-- Trending links will be loaded here -->
+            </div>
+        </section>
+
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Search links...">
+        </section>
+
+        <section class="category" data-category="digital-services">
+            <h2>Digital Services</h2>
+            <ul id="digital-services">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="entertainment">
+            <h2>Entertainment</h2>
+            <ul id="entertainment">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="privacy-security">
+            <h2>Privacy/Security</h2>
+            <ul id="privacy-security">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="financial">
+            <h2>Financial</h2>
+            <ul id="financial">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="adult-content">
+            <h2>Adult Content</h2>
+            <ul id="adult-content">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="utilities">
+            <h2>Utilities</h2>
+            <ul id="utilities">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+
+        <section class="category" data-category="community">
+            <h2>Community</h2>
+            <ul id="community">
+                <!-- Links will be loaded here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

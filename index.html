@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulated Browser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #advertisement {
+            font-size: 2em;
+            color: red;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="advertisement">
+        This is a simulated advertisement.
+    </div>
+    <p>You will be redirected in 5 seconds...</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get the requested URL from the query parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectURL = urlParams.get('url');
+
+            if (redirectURL) {
+                // Redirect after 5 seconds
+                setTimeout(() => {
+                    // Open the URL in a new tab/window
+                    window.open(decodeURIComponent(redirectURL), '_blank');
+
+                    // Optionally, close the current tab if desired
+                    window.close();
+                }, 5000);
+            } else {
+                // Load the landing page if no URL is specified
+                window.location.href = 'landing.html';
+            }
+        });
+    </script>
+</body>
+</html>
